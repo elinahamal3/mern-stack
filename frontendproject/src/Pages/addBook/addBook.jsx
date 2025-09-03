@@ -15,7 +15,7 @@ const addBook = () => {
   // const handleSubmit = async (e) => {
   //   e.preventDefault();
   //   const response = await axios.post(
-  //     "http://localhost:3000/book",
+  //     "https://mernbackend-1f51.onrender.com/book",
   //     {
   //       bookName,
   //       bookPrice,
@@ -60,7 +60,7 @@ const addBook = () => {
     });
     formData.append("image", image);
 
-    const response = await axios.post("http://localhost:3000/book", formData);
+    const response = await axios.post("https://mernbackend-1f51.onrender.com/book", formData);
     if (response.status === 201) {
       navigate("/");
     } else {
